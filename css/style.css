@@ -48,6 +48,24 @@
         margin: 0.5rem;
     }
 
+    header .fa-bars {
+        color: white;
+        margin: 0 1.5rem;
+        display: none;
+
+    }
+
+    /* Header mobile */
+    @media screen and (max-width: 768px) {
+        header nav {
+            display: none;
+        }
+
+        header .fa-bars {
+            display: block;
+        }
+    }
+
 /* Main */
     /* Sections */
         main section {
@@ -108,6 +126,7 @@
 
         .cards.big .imgBox {
             width: 50%;
+            min-width: 300px;
             height: 100%;
             display: flex;
             justify-content: center;
