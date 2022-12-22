@@ -19,28 +19,52 @@
             font-size: 1rem;
         }
 
-        .row {
-            min-width: 480px;
-        }
         .cards.big {
             flex-wrap: wrap;
             display: flex;
-            align-content: center;
-            text-align: center;
+            flex-direction: column;
+            justify-content: flex-start;
         }
-
+        
         
         .cards.big .imgBox img {
             object-fit: contain;
             align-self: flex-start;
         }
         
+        .row {
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .rowContent {
+            width: 100%;
+        }
+
+        .rowContent .imgBox {
+            display: flex;
+            justify-content: center;
+        }
         
+        .row h3, .row h4 {
+            padding-left: 0;
+        }
     }
     
     /* Mobile view */
     @media screen and (max-width: 480px) {
         /* Overview */
+
+        .overview {
+            padding: 4rem 0rem 2rem 0rem;
+        }
+
+        section.planning {
+            padding: 2rem 0 2rem 0;
+        }
         .overview .cards {
             width: 90%;
         }
@@ -50,6 +74,16 @@
             flex-direction: column;
             justify-content: center;
         }
+
+        .cards.big .imgBox {
+            width: 100%;
+        }
+
+        .cards.big .imgBox img {
+            height: 15rem;
+        }
+
+        .cards.big
         /* Planning */
         .row {
             min-width: 0;
@@ -57,5 +91,11 @@
         }
         .planning .container {
             justify-content: center;
+        }
+
+        /* Partners */
+        .partnersCard {
+            flex-wrap: wrap;
+
         }
     }
