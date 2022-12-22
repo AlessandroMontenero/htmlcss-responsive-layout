@@ -7,6 +7,45 @@
         width: 100%;
         height: var(--headerHeight);
         background-color: var(--primaryColor);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .container {
+        justify-content: space-between;
+    }
+
+    header img {
+        padding: 0;
+        margin: 0 1rem;
+    }
+
+    header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header li {
+        float: left;
+        margin: 0 0.5rem;
+    }
+
+    header li a {
+        display: block;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+        font-size: small;
+    }
+
+    header li button a {
+        color: black;
+    }
+
+    header h4 {
+        margin: 0.5rem;
     }
 
 /* Main */
@@ -108,6 +147,7 @@
         background-color: white;
         display: flex;
         flex-direction: column;
+        border-radius: 40px;
     }
     
     .cards.white h3,

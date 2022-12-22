@@ -21,7 +21,7 @@ img {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1000px;
 	width: 100%;
 	display: flex;
     align-items: center;
@@ -102,5 +102,5 @@ button.blue i {
 .circle.violet {
 	background-color: var(--cardBackgroundColorViolet);
 	height: 4rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
