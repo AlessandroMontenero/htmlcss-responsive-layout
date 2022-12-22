@@ -202,6 +202,48 @@
         width: 80%;
         color: white;
     }
+
+    /* Benefits */
+    .benefitsContainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+    .benefitsCard {
+        width: calc(100% / 3 - 1rem);
+        background-color: white;
+        margin-bottom: 1rem;
+        border-radius: var(--borderRadius);
+        padding: 0.5rem 1rem;
+        box-sizing: border-box;
+    }
+
+    /* About Us */
+    .aboutUsContent {
+        width: 60%;
+    }
+
+    .aboutUsImage {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutUsImage.description {
+        color: var(--cardBackgroundColorViolet);
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .aboutUsImage.description button {
+        font-size: 0.7rem;
+        width: fit-content;
+    }
+
+
 /* footer */
     footer {
         height: 30vh;

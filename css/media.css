@@ -52,6 +52,14 @@
         .row h3, .row h4 {
             padding-left: 0;
         }
+
+        /* Benefits */
+        .benefitsContainer {
+            flex-wrap: wrap;
+        }
+        .benefitsCard {
+            width: calc(100% / 2 - 1rem);
+        }
     }
     
     /* Mobile view */
@@ -62,7 +70,9 @@
             padding: 4rem 0rem 2rem 0rem;
         }
 
-        section.planning {
+        section.planning,
+        section.benefits,
+        section.partners {
             padding: 2rem 0 2rem 0;
         }
         .overview .cards {
@@ -96,6 +106,26 @@
         /* Partners */
         .partnersCard {
             flex-wrap: wrap;
+        }
 
+        
+        .benefitsCard {
+            width: 100%;
+        }
+
+        /* About Us */
+        .aboutUs .container {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .aboutUsContent {
+            width: 100%;
+        }
+
+        .aboutUsImage {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
         }
     }

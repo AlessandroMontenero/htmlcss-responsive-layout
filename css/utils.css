@@ -50,6 +50,12 @@ h3 {
 	font-size: 1rem;
 }
 
+.benefitsCard h2, 
+.benefitsCard h3,
+.aboutUsContent h2 {
+	color: var(--cardBackgroundColorViolet);
+}
+
 h4 {
 	font-size: 0.8rem;
 	margin-top: 0;
@@ -77,6 +83,14 @@ button i.fa-apple {
 
 button.blue {
 	background-color: var(--primaryColor);
+}
+
+button.violet {
+	background-color: var(--cardBackgroundColorViolet);
+	font-size: 1rem;
+	padding: 0.5rem 2rem;
+	color: white;
+	font-weight: 200;
 }
 
 button.blue h3, 
