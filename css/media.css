@@ -23,3 +23,9 @@
 
     }
 
+    /* Mobile view */
+    @media screen and (max-width: 480px) {
+        .overview .cards {
+            width: 100%;
+        }
+    }
