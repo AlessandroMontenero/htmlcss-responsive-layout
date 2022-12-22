@@ -35,9 +35,9 @@
     header li a {
         display: block;
         color: white;
-        font-size: 1rem;
         text-align: center;
         font-size: small;
+        font-weight: 400;
     }
 
     header li button a {
@@ -110,17 +110,16 @@
 
         .cards.big .content {
             width: 60%;
-            margin: 1rem 1.1rem;
             align-self: stretch;
+            padding: 1rem;
         }
 
         .cards.big .imgBox {
             width: 40%;
-            min-width: 300px;
-            height: 100%;
+            align-self: stretch;
             display: flex;
-            justify-content: center;
             align-items: flex-end;
+            justify-content: center;
         }
 
         .cards.big .imgBox img {
@@ -135,10 +134,13 @@
         flex-wrap: wrap;
         
     }
+
+    .planning .container {
+        justify-content: center;
+    }
     
     .row {
-        width: 30%;
-        min-width: 500px;
+        width: 40%;
         display: flex;
         flex-direction: column;
         color: white;
@@ -152,7 +154,7 @@
     }
 
     .cards.white {
-        width: 100%;
+        width: 90%;
         background-color: white;
         display: flex;
         flex-direction: column;

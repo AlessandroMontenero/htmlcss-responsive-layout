@@ -2,6 +2,10 @@
     /* Tablet view */
     @media screen and (max-width: 768px) {
         /* Header */
+        body {
+            width: 100%;
+        }
+        
         header nav {
             display: none;
         }
@@ -10,22 +14,48 @@
             display: block;
         }
 
-        .cards.big {
-            flex-wrap: wrap;
+        button h3,
+        button i {
+            font-size: 1rem;
         }
 
+        .row {
+            min-width: 480px;
+        }
+        .cards.big {
+            flex-wrap: wrap;
+            display: flex;
+            align-content: center;
+            text-align: center;
+        }
 
+        
         .cards.big .imgBox img {
-            height: 15rem;
             object-fit: contain;
             align-self: flex-start;
         }
-
+        
+        
     }
-
+    
     /* Mobile view */
     @media screen and (max-width: 480px) {
+        /* Overview */
         .overview .cards {
-            width: 100%;
+            width: 90%;
+        }
+        
+        .cards.big .content {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        /* Planning */
+        .row {
+            min-width: 0;
+            width: 80%;
+        }
+        .planning .container {
+            justify-content: center;
         }
     }
